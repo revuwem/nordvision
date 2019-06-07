@@ -1,3 +1,3 @@
 # nordvision
-wordpress site for Nordvision \n
+wordpress site for Nordvision
 Murmansk, 2019
