@@ -1,0 +1,30 @@
+/* custom styles for nordvision landing page */
+
+body, html{
+    background: #FFFFFF;
+
+}
+
+.bg-blue{
+    background: #257EB8;
+}
+
+.bg-light-grey{
+    background: #CCCCCC;
+}
+
+.bg-dark-grey{
+    background: #B3B3B3; 
+}
+
+#svg{
+   width: 50%;
+   margin:0 auto;
+}
+
+img, iframe{
+    width: 100%;
+}
+
+
+
