@@ -11,38 +11,39 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/style.css">
 
-    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 
     <title>Nordvision</title>
   </head>
   <body>
     <header>
       <!-- header-info -->
-      <div class="container-fluid">
+      <div class="container-fluid" id="header">
         <div class="row">
-          <div class="col-6">
-            <img src="images/SVG/nv-logo.svg" alt="Nordvision it-решения для бизнеса">
+          <div class="col-12 col-md-6 col-lg-5">
+            <img src="images/logo/nv-logo.svg" alt="Nordvision it-решения для бизнеса">
           </div>
-          <div class="col-4">
-            <p>г.Мурманск, ул.Ленина, д.10</p>
-            <p>+7(911)303-11-70</p>
-          </div>
-          <div class="col-2">
-            <p>office@nordvision.com</p>  
+          <div class="col-12 col-md-6 col-lg-4">
+            <p id="address">г.Мурманск, ул.Ленина, д.10</p>
+            <p id="phone">+7(911)303-11-70</p>            
+          </div> 
+          <div class="col-12 col-md-12 col-lg-3 text-right p-2">
+            <p id="email">office@nordvision.com</p>  
             <button class="btn bg-blue">Заказать обратный звонок</button>
-          </div>
+          </div>         
         </div>
-      </div>  
-      <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      </div> <!-- /.container-fluid --> 
+      <nav class="navbar navbar-expand-md bg-white navbar-white justify-content-end">
 
         <!-- Toggler/collapsible button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
+          <span class="fa fa-bars" aria-hidden="true"></span>
         </button>
 
 
         <!-- Navbar links -->
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item"><a href="#" class="nav-link">Видеонаблюдение</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">IT-сопровождение офисов</a></li>
@@ -106,22 +107,22 @@
       <div class="container-fluid" id="content-two-container">
         <div class="row bg-light-grey content">
           <div class="col col-12 col-sm-6">
-            <img src="" alt="1">
+            <img src="images/content two/depositphotos-home-security-system.png" alt="1">
             <h5>Доступ из любой точки мира</h5>
             <p>Наблюдайте за тем, что Вам дорого в реальном времени с помощью мобильного приложения</p>
           </div>
           <div class="col col-12 col-md-6">
-            <img src="images/content two/SVG/image-2.svg" alt="2">
+            <img src="images/content two/depositphotos-smart-info-system.png" alt="2">
             <h5>Встроенные датчики движения и звука</h5>
             <p>Получайте уведомления, если камера зафиксировала звук или движение в выделенной области</p>
           </div>
           <div class="col col-12 col-md-6">
-            <img src="" alt="3">
+            <img src="images/content two/depositphotos-house-under-lock.png" alt="3">
             <h5>Хранение записей до 30 дней</h5>
             <p>Записанные видео могут храниться в облаке от 3 до 30 дней</p>
           </div>
           <div class="col col-12 col-md-6">
-            <img src="" alt="4">
+            <img src="images/content two/depositphotos-device-wires.png" alt="4">
             <h5>Качественное видео и легкая установка</h5>
             <p>Камера записывает видео в разрешении 1280х960, а запуск и подклчение не займет больше 20 минут</p>
           </div>
@@ -251,14 +252,14 @@
             </div>  <!-- /.content -->
           </div>  <!-- /#back-call-form-container -->
 
-          <div class="container-fluid" id="contacts">
+          <div class="container-fluid" id="contacts-container">
             <div class="row content-header">
               <h3>Контакты:</h3>
             </div>
             <div class="row">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1431.767755818999!2d33.065779016245365!3d68.97008258599779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4434102a760398ff%3A0xd1084e6422314809!2z0YPQuy4g0JrQvtC80LjQvdGC0LXRgNC90LAsIDUsINCc0YPRgNC80LDQvdGB0LosINCc0YPRgNC80LDQvdGB0LrQsNGPINC-0LHQuy4sIDE4MzAzOA!5e0!3m2!1sru!2sru!4v1560700475899!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
-          </div> <!-- /#contacts -->
+          </div> <!-- /#contacts-container -->
     </wrapper>
     <footer>
       <div class="container-fluid bg-blue">
