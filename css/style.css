@@ -1,11 +1,9 @@
 /* custom styles for nordvision landing page */
 
 
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400&display=swap&subset=cyrillic');
 
-*{
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap&subset=cyrillic');
+
 
 
 body, html{
@@ -30,6 +28,14 @@ body, html{
     background: #B3B3B3; 
 }
 
+.color-blue{
+    color:#257EB8;
+}
+
+.color-white{
+    color:#fff;
+}
+
 #svg{
    width: 50%;
    margin:0 auto;
@@ -41,39 +47,72 @@ img, iframe{
 
 
 /* Header Styles */
-.navbar {
-   align-content: center;
+
+#header{
+    padding: 1.5rem;
 }
 
+#header p{
+    text-align: right;
+}
 
 #header img{
-    width: 70%;
-    padding: .5rem;
+    width: 100%;  
+    max-width: 25rem; 
+    cursor: pointer; 
 }
 
 
 #address{
-    font-size: 2.5vw;
-    font-weight: 300;    
+    font-size: 1.4em;
+    font-weight: 300;       
 }
 
 #phone{    
     color:  #257EB8;
-    font-size: 2.5rem;
+    font-size: 2em;
+    font-weight: bolder;    
 }
 
-/* Menu Styles */
-a{
-    color: #000;
-    text-align: center;
-    font-size: 1rem;
+#email{    
+    text-align: center !important;
 }
 
-a:hover{
-    color: #257EB8;
+#btn_new_back_call{
+    color: #fff;
+    float: right;
+    width: 100%;
+   
+}
+
+@media only screen and (max-width: 768px){
+    #email{
+        display: none;
+    }
+}
+
+/* Navbar Styles */
+
+.navbar {
+    align-content: center;
+}
+
+.navbar-toggler{
+    margin-bottom: .5rem;
 }
 
 .fa-bars{
+    color: #257EB8;
+}
+
+.nav-link{
+    color: #000;
+    text-align: center;
+    font-size: 1.1em;
+    width: 100%;    
+}
+
+.nav-link:hover{
     color: #257EB8;
 }
 
@@ -87,4 +126,72 @@ a:hover{
         background-color: #257EB8;
         color: #fff;
     }
+}
+
+
+/* Slider Styles */
+#slider{
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    width:100%;
+}
+
+
+/* Content Styles */
+
+.content-header{
+    padding: 1.3rem;
+}
+
+.header-text{ 
+    font-weight: 700;    
+}
+
+.content{
+    padding: 1.5rem;    
+}
+
+.content-img{ 
+    grid-row: span 2;
+    height: 100%;    
+    margin: auto 0;
+    padding: .3rem;
+}
+
+.img-md{
+    max-height: 30vh;
+}
+
+.img-sm{
+    max-height: 20vh;
+}
+
+
+#content-two p, #content-three p{
+    grid-column-start: 2;
+    text-align: left;    
+}
+
+
+.grid{
+    display: inline-grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: auto auto;
+    align-content: center;
+    grid-gap: .5rem .3rem;
+    width: 100%;
+    text-align: left;
+    
+}
+
+
+
+
+/* Footer Styles */
+footer{
+    padding: 1.2rem;
+}
+
+footer p{
+    line-height: 0.7;
 }

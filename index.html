@@ -20,17 +20,17 @@
     <header>
       <!-- header-info -->
       <div class="container-fluid" id="header">
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-5">
+        <div class="row align-items-center justify-content-around">
+          <div class="col-12 col-md-6 col-lg-5 col-xl-4">
             <img src="images/logo/nv-logo.svg" alt="Nordvision it-решения для бизнеса">
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4 offset-xl-2 col-xl-3">
             <p id="address">г.Мурманск, ул.Ленина, д.10</p>
             <p id="phone">+7(911)303-11-70</p>            
           </div> 
-          <div class="col-12 col-md-12 col-lg-3 text-right p-2">
+          <div class="col-12 offset-md-8 col-md-4 offset-lg-0 col-lg-3 col-xl-3">
             <p id="email">office@nordvision.com</p>  
-            <button class="btn bg-blue">Заказать обратный звонок</button>
+            <button class="btn bg-blue" id="btn_new_back_call">Заказать обратный звонок</button>
           </div>         
         </div>
       </div> <!-- /.container-fluid --> 
@@ -93,37 +93,51 @@
       </div> <!-- /#slider-container -->      
       <div class="container-fluid" id="content-one-container">
         <div class="row content-header">
-          <h5>Подберем обордувание и установим:</h5>
+          <h3 class="header-text color-blue mx-auto">Подберем оборудование и установим:</h3>
         </div>
-        <div class="row content">
-          <div class="col"><img src="images/content one/SVG/intercom-image.svg" alt=""></div>
-          <div class="col"><img src="images/content one/SVG/cctv-home-image.svg"></div>
-          <div class="col"><img src="images/content one/SVG/cctv-auto-image.svg" alt=""></div>
-          <div class="col"><img src="images/content one/SVG/cctv-warehouse-image.svg" alt=""></div>
-          <div class="col"><img src="images/content one/SVG/cctv-house-image.svg" alt=""></div>
+        <div class="row content justify-content-center text-center" id="content-one">
+          <div class="col">
+            <img src="images/content one/SVG/intercom-image.svg" alt="">
+            <p>Видеодомофоны</p>
+          </div>
+          <div class="col">
+            <img src="images/content one/SVG/cctv-home-image.svg">
+            <p>Видеонаблюдение в квартире и подъезде</p>
+          </div>
+          <div class="col">
+            <img src="images/content one/SVG/cctv-auto-image.svg" alt="">
+            <p>Видеонаблюдение за автомобилем</p>
+          </div>
+          <div class="col">
+            <img src="images/content one/SVG/cctv-warehouse-image.svg" alt="">
+            <p>Видеонаблюдение в офисе и складе</p>
+          </div>
+          <div class="col">
+            <img src="images/content one/SVG/cctv-house-image.svg" alt="">
+            <p>Видеонаблюдение за домом</p></div>
         </div>
       </div> <!-- /#content-one-container -->
       
       <div class="container-fluid" id="content-two-container">
-        <div class="row bg-light-grey content">
-          <div class="col col-12 col-sm-6">
-            <img src="images/content two/depositphotos-home-security-system.png" alt="1">
-            <h5>Доступ из любой точки мира</h5>
-            <p>Наблюдайте за тем, что Вам дорого в реальном времени с помощью мобильного приложения</p>
+        <div class="row bg-light-grey content" id="content-two">
+          <div class="grid col-12 col-md-6">
+              <img src="images/content two/depositphotos-home-security-system.png" alt="1" class="content-img img-md">
+              <h4 class="header-text color-blue">Доступ из любой точки мира</h4>
+              <p>Наблюдайте за тем, что Вам дорого в реальном времени с помощью мобильного приложения</p>            
           </div>
-          <div class="col col-12 col-md-6">
-            <img src="images/content two/depositphotos-smart-info-system.png" alt="2">
-            <h5>Встроенные датчики движения и звука</h5>
+          <div class="grid col-12 col-md-6">
+            <img src="images/content two/depositphotos-smart-info-system.png" alt="2" class="content-img img-md">
+            <h4 class="header-text color-blue">Встроенные датчики движения и звука</h4>
             <p>Получайте уведомления, если камера зафиксировала звук или движение в выделенной области</p>
           </div>
-          <div class="col col-12 col-md-6">
-            <img src="images/content two/depositphotos-house-under-lock.png" alt="3">
-            <h5>Хранение записей до 30 дней</h5>
+          <div class="grid col-12 col-md-6">
+            <img src="images/content two/depositphotos-house-under-lock.png" alt="3" class="content-img img-md">
+            <h4 class="header-text color-blue">Хранение записей до 30 дней</h4>
             <p>Записанные видео могут храниться в облаке от 3 до 30 дней</p>
           </div>
-          <div class="col col-12 col-md-6">
-            <img src="images/content two/depositphotos-device-wires.png" alt="4">
-            <h5>Качественное видео и легкая установка</h5>
+          <div class="grid col-12 col-md-6">
+            <img src="images/content two/depositphotos-device-wires.png" alt="4" class="content-img img-md"> 
+            <h4 class="header-text color-blue">Качественное видео и легкая установка</h4>
             <p>Камера записывает видео в разрешении 1280х960, а запуск и подклчение не займет больше 20 минут</p>
           </div>
         </div>
@@ -131,7 +145,7 @@
       
       <div class="container-fluid" id="consult-feedback-form-container">
         <div class="row content-header">
-          <h5>Получите бесплатную консультацию:</h5>
+          <h3 class="header-text color-blue mx-auto">Получите бесплатную консультацию:</h3>
         </div>
         <div class="row content">
           <form action="" method="post" id="consult-feedback-form-container">
@@ -149,27 +163,27 @@
       
       <div class="container-fluid bg-blue" id="content-three-container">
         <div class="row content-header">
-          <h3>Почему мы:</h3>
+          <h3 class="header-text mx-auto">Почему мы:</h3>
         </div>
-        <div class="row content">
-          <div class="col col-12 col-lg-6">
-            <img src="images/content three/SVG/icon-1.svg" alt="1">
-            <h5>Обслуживание «под ключ»</h5>
+        <div class="row content" id="content-three">
+          <div class="grid col-12 col-lg-6">
+            <img src="images/content three/SVG/icon-1.svg" alt="1" class="content-img img-sm">
+            <h4 class="header-text color-white">Обслуживание «под ключ»</h4>
             <p>Берем оплату только за конкретные работы. В отличие от штатных сотрудников нам не надо оплачивать отпуск и больничные - мы всегда на месте!</p>
           </div>
-          <div class="col col-12 col-lg-6">
-            <img src="images/content three/SVG/icon-2.svg" alt="2">
-            <h5>Бесплатное консультирование</h5>
+          <div class="grid col-12 col-lg-6">
+            <img src="images/content three/SVG/icon-2.svg" alt="2" class="content-img img-sm">
+            <h4 class="header-text color-white">Бесплатное консультирование</h4>
             <p>Даём бесплатные квалифицированные консультации по выбору оборудования</p>
           </div>
-          <div class="col col-12 col-lg-6">
-            <img src="images/content three/SVG/icon-3.svg" alt="3">
-            <h5>Решаем проблемы до их появления</h5>
+          <div class="grid col-12 col-lg-6">
+            <img src="images/content three/SVG/icon-3.svg" alt="3" class="content-img img-sm">
+            <h4 class="header-text color-white">Решаем проблемы до их появления</h4>
             <p>Своевременно защищаем от сбоев работу серверов, выполняем настройку компьютеров, оргтехники, систем связи</p>
           </div>
-          <div class="col col-12 col-lg-6">
-            <img src="images/content three/SVG/icon-4.svg" alt="4">
-            <h5>Избавляем от рутины</h5>
+          <div class="grid col-12 col-lg-6">
+            <img src="images/content three/SVG/icon-4.svg" alt="4" class="content-img img-sm">
+            <h4 class="header-text color-white">Избавляем от рутины</h4>
             <p>Решаем сложные вопросы по поиску сервисного центра, поставщиков расходных материалов и т.п.</p>
           </div>
         </div>
@@ -197,17 +211,32 @@
         </div>
       </div> <!-- /#content-roadmap-container -->
 
-      <div class="container-fluid" id="content-four-container">
+      <div class="container-fluid bg-light-grey" id="content-four-container">
         <div class="row content-header">
           <!-- TODO:поменять картинки -->
-          <h5>Компания <a href="№">Nordvision</a> в цифрах:</h5>
+          <h3 class="header-text color-blue">Компания <a href="#" class="blue-header">Nordvision</a> в цифрах:</h3>
         </div>
-        <div class="row content">
-            <div class="col"><img src="images/content one/SVG/intercom-image.svg" alt=""></div>
-            <div class="col"><img src="images/content one/SVG/cctv-home-image.svg"></div>
-            <div class="col"><img src="images/content one/SVG/cctv-auto-image.svg" alt=""></div>
-            <div class="col"><img src="images/content one/SVG/cctv-warehouse-image.svg" alt=""></div>
-            <div class="col"><img src="images/content one/SVG/cctv-house-image.svg" alt=""></div>
+        <div class="row content text-center">
+            <div class="col">
+                <img src="images/content one/SVG/intercom-image.svg" alt="">
+                <p>Видеодомофоны</p>
+              </div>
+              <div class="col">
+                <img src="images/content one/SVG/cctv-home-image.svg">
+                <p>Видеонаблюдение в квартире и подъезде</p>
+              </div>
+              <div class="col">
+                <img src="images/content one/SVG/cctv-auto-image.svg" alt="">
+                <p>Видеонаблюдение за автомобилем</p>
+              </div>
+              <div class="col">
+                <img src="images/content one/SVG/cctv-warehouse-image.svg" alt="">
+                <p>Видеонаблюдение в офисе и складе</p>
+              </div>
+              <div class="col">
+                <img src="images/content one/SVG/cctv-house-image.svg" alt="">
+                <p>Видеонаблюдение за домом</p></div>
+            </div>
         </div>
       </div> <!-- /#content-four-container -->
 
@@ -261,10 +290,10 @@
             </div>
           </div> <!-- /#contacts-container -->
     </wrapper>
-    <footer>
-      <div class="container-fluid bg-blue">
+    <footer class="bg-blue">
+      <div class="container-fluid">
         <div class="row" style="display:block">
-          <p class="text-right">2019 ООО "Нордвижен"</p>
+          <p class="text-right">2019 <b>ООО "Нордвижен"</b></p>
           <p class="text-right">E-mail: office@nordvision.com</p>
           <p class="text-right">Телефон: +7(911)303-11-70</p>
         </div>
