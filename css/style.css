@@ -158,6 +158,10 @@ img, iframe{
     padding: .3rem;
 }
 
+#content-one img, #content-four img{
+    width: 70%;
+}
+
 .img-md{
     max-height: 30vh;
 }
