@@ -174,7 +174,7 @@ iframe {
 }
 
 #content-one,
-#content-two {
+#content-four {
     font-size: .9rem;
 }
 
@@ -183,21 +183,28 @@ iframe {
     width: 70%;
 }
 
-.c-element {
-    margin: 1rem;
-}
-
 #content-two img {
     object-fit: cover;
+    width: 40%;
+    height: 20vh;
+    float: left;
+    padding: 2% 2% 0 0;
 }
 
-#content-two .header-text {
-    text-align: left;
-}
-
-#content-three p {
+.c3-h4,
+.c3-p {
     width: 75%;
     float: right;
+}
+
+.c2-p,
+.c2-h5 {
+    width: 60%;
+    float: right;
+}
+
+#content-four-container a {
+    text-decoration: none;
 }
 
 
@@ -227,5 +234,10 @@ footer p {
         background-color: #257EB8;
         color: #fff;
         padding: .5rem;
+    }
+    .c2-p,
+    .c2-h5 {
+        width: 100%;
+        text-align: center;
     }
 }
