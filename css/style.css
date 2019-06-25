@@ -35,6 +35,14 @@ body, html{
     color:#fff;
 }
 
+.img-md{
+    max-height: 30vh;
+}
+
+.img-sm{
+    max-height: 20vh;    
+}
+
 #svg{
    width: 50%;
    margin:0 auto;
@@ -177,29 +185,28 @@ img, iframe{
     padding: 1.5rem;    
 }
 
-.content-img{     
-    height: 100%;    
-    margin: auto 0;
-    padding: .3rem;
+#content-one, #content-two{
+    font-size: .9rem;
 }
 
 #content-one img, #content-four img{
     width: 70%;
 }
 
-
-.img-md{
-    max-height: 30vh;
+.c-element{
+    margin: 1rem;
 }
 
-.img-sm{
-    max-height: 20vh;
+#content-two img{
+    object-fit: cover;
+}
+
+#content-two .header-text{
+    text-align: left;
 }
 
 
-#content-one{
-    font-size: .9rem;
-}
+
 
 /* Footer Styles */
 footer{
