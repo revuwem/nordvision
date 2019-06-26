@@ -180,7 +180,10 @@ iframe {
 
 #content-one img,
 #content-four img {
-    width: 70%;
+    width: 20vw;
+    max-width: 6rem;
+    object-fit: cover;
+    padding: 2%;
 }
 
 #content-two img {
@@ -205,6 +208,59 @@ iframe {
 
 #content-four-container a {
     text-decoration: none;
+}
+
+
+/* Roadmap */
+
+#content-roadmap-container .content {
+    width: 100%;
+    max-width: 980px;
+    margin: auto;
+}
+
+#roadmap-list {
+    display: flex;
+}
+
+.list-cell {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.list-cell::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #aaa;
+}
+
+.list-cell:first-child::before {
+    left: 50%;
+}
+
+.list-cell:last-child::before {
+    right: 50%;
+}
+
+.list-cell div {
+    text-align: center;
+}
+
+.list-marker {
+    position: relative;
+    left: 50%;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #4d4d4d;
+    border: 1px solid #257EB8;
 }
 
 
@@ -239,5 +295,33 @@ footer p {
     .c2-h5 {
         width: 100%;
         text-align: center;
+    }
+    #roadmap-list {
+        flex-direction: column;
+    }
+    .list-cell {
+        flex-direction: row;
+    }
+    .list-cell::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 10px;
+        right: 0;
+        width: 2px;
+        height: 100%;
+    }
+    .list-cell:first-child::before {
+        top: 10px;
+        left: 10px;
+    }
+    .list-cell:last-child::before {
+        bottom: 10px;
+        right: auto;
+    }
+    .list-marker {
+        left: 0;
     }
 }
