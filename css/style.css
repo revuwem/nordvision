@@ -1,0 +1,360 @@
+/* custom styles for nordvision landing page */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap&subset=cyrillic');
+body,
+html {
+    background: #ffffff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    line-height: 1.25;
+    max-width: 100vw;
+}
+
+.container-fluid {
+    max-width: 1200px;
+}
+
+.bg-blue {
+    background: #257EB8;
+}
+
+.bg-light-grey {
+    background: #CCCCCC;
+}
+
+.bg-dark-grey {
+    background: #B3B3B3;
+}
+
+.color-blue {
+    color: #257EB8;
+}
+
+.color-white {
+    color: #fff;
+}
+
+.img-sm {
+    max-height: 20vh;
+    width: 25%;
+    height: auto;
+    padding: 3%;
+}
+
+img,
+iframe {
+    width: 100%;
+}
+
+.btn-blue {
+    background: #257EB8;
+    color: #fff;
+    max-width: 15rem;
+    border: none;
+    border-radius: 50px;
+}
+
+
+/* Header Styles */
+
+#header {
+    padding: 1.5rem;
+}
+
+#header p {
+    text-align: right;
+}
+
+#header img {
+    width: 100%;
+    max-width: 25rem;
+    cursor: pointer;
+}
+
+#address {
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+#phone {
+    color: #257EB8;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+#email {
+    text-align: center !important;
+}
+
+@media only screen and (max-width: 768px) {
+    #email {
+        display: none;
+    }
+}
+
+
+/* Navbar Styles */
+
+.navbar {
+    align-content: center;
+}
+
+.navbar-toggler {
+    margin-bottom: .5rem;
+}
+
+.fa-bars {
+    color: #257EB8;
+}
+
+.navbar-nav {
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.nav-item {
+    flex-grow: 1;
+}
+
+.nav-link {
+    color: #000;
+    text-align: center;
+    font-size: 1.1em;
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: #257EB8;
+}
+
+
+/* Slider Styles */
+
+#slider {
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    width: 100%;
+}
+
+.carousel-indicators li {
+    border-radius: 100%;
+    width: .9em;
+    height: .9em;
+    background-color: #257EB8;
+}
+
+.carousel-indicators {
+    margin-bottom: 0;
+}
+
+.carousel-caption {
+    top: 0;
+    right: 5%;
+    left: 50%;
+    text-align: right;
+    color: #000;
+    font-size: 2.3vw;
+    padding-top: 5%;
+}
+
+.carousel-caption p {
+    margin: 5% 0 7%;
+}
+
+
+/* Content Styles */
+
+.content-header {
+    padding: 1.3rem;
+}
+
+.header-text {
+    font-weight: 700;
+}
+
+.content {
+    padding: 1.5rem;
+}
+
+#content-one,
+#content-four {
+    font-size: .9rem;
+}
+
+#content-one img,
+#content-four img {
+    width: 20vw;
+    max-width: 6rem;
+    object-fit: cover;
+    padding: 2%;
+}
+
+#content-two img {
+    object-fit: cover;
+    width: 40%;
+    height: 20vh;
+    float: left;
+    padding: 2% 2% 0 0;
+}
+
+.c3-h4,
+.c3-p {
+    width: 75%;
+    float: right;
+}
+
+.c2-p,
+.c2-h5 {
+    width: 60%;
+    float: right;
+}
+
+#content-four-container a {
+    text-decoration: none;
+}
+
+
+/* Roadmap */
+
+#content-roadmap-container .content {
+    width: 100%;
+    max-width: 980px;
+    margin: auto;
+}
+
+#roadmap-list {
+    display: flex;
+}
+
+.list-cell {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 15%;
+}
+
+.list-cell::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #257EB8;
+}
+
+.list-cell:first-child::before {
+    left: 50%;
+}
+
+.list-cell:last-child::before {
+    right: 50%;
+}
+
+.list-cell div {
+    text-align: center;
+}
+
+.list-marker {
+    position: relative;
+    left: 45%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4d4d4d;
+    border: 2px solid #257EB8;
+}
+
+.gallery {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.img-item {
+    width: 18%;
+    margin: 0 2% 2% 0;
+}
+
+.img-item img {
+    object-fit: cover;
+    border: 1px solid grey;
+    height: 100%;
+}
+
+
+/* Footer Styles */
+
+footer {
+    padding: 1.2rem;
+}
+
+footer p {
+    line-height: 0.7;
+}
+
+@media only screen and (max-width: 767px) {
+    .nav-item>a {
+        background-color: #CCCCCC;
+        text-align: center;
+    }
+    .nav-item>a:hover {
+        background-color: #257EB8;
+        color: #fff;
+    }
+    .carousel-caption {
+        display: none;
+    }
+    #content-one p {
+        background-color: #257EB8;
+        color: #fff;
+        padding: .5rem;
+    }
+    .c2-p,
+    .c2-h5 {
+        width: 100%;
+        text-align: center;
+    }
+    .img-item {
+        width: 48%;
+    }
+}
+
+@media(max-width: 900px) {
+    #roadmap-list {
+        flex-direction: column;
+    }
+    .list-cell {
+        flex-direction: row;
+    }
+    .list-cell::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 10px;
+        right: 0;
+        width: 3px;
+        height: 100%;
+    }
+    .list-cell:first-child::before {
+        top: 10px;
+        left: 10px;
+    }
+    .list-cell:last-child::before {
+        top: -25px;
+        right: auto;
+    }
+    .list-marker {
+        left: 0;
+    }
+    .list-cell p {
+        text-align: start;
+    }
+}
