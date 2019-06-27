@@ -228,6 +228,7 @@ iframe {
     display: flex;
     flex-direction: column;
     position: relative;
+    min-width: 15%;
 }
 
 .list-cell::before {
@@ -237,8 +238,8 @@ iframe {
     top: 10px;
     left: 0;
     right: 0;
-    height: 2px;
-    background: #aaa;
+    height: 3px;
+    background: #257EB8;
 }
 
 .list-cell:first-child::before {
@@ -255,12 +256,12 @@ iframe {
 
 .list-marker {
     position: relative;
-    left: 50%;
-    width: 22px;
-    height: 22px;
+    left: 45%;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background: #4d4d4d;
-    border: 1px solid #257EB8;
+    border: 2px solid #257EB8;
 }
 
 
@@ -296,6 +297,9 @@ footer p {
         width: 100%;
         text-align: center;
     }
+}
+
+@media(max-width: 900px) {
     #roadmap-list {
         flex-direction: column;
     }
@@ -310,7 +314,7 @@ footer p {
         bottom: 0;
         left: 10px;
         right: 0;
-        width: 2px;
+        width: 3px;
         height: 100%;
     }
     .list-cell:first-child::before {
@@ -318,10 +322,13 @@ footer p {
         left: 10px;
     }
     .list-cell:last-child::before {
-        bottom: 10px;
+        top: -25px;
         right: auto;
     }
     .list-marker {
         left: 0;
+    }
+    .list-cell p {
+        text-align: start;
     }
 }
